@@ -32,4 +32,4 @@ p-value es menor a 0.05 (el alpha) enonces **se rechaza** la hipotesis y se conc
 
 ### output
 
-![](output.PNG)
+![](output.png)
