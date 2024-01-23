@@ -33,3 +33,13 @@ p-value es menor a 0.05 (el alpha) enonces **se rechaza** la hipotesis y se conc
 ### output
 
 ![](output.png)
+
+# Conceptos complementarios
+
+Donde:
+
+-   **intercepto**: donde intercepta la linea en el eje Y
+
+-   **pendiente o coeficiente**: cuando varia el valor de Y por cada unidad de X
+
+![](conceptos.PNG)
