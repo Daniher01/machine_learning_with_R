@@ -43,3 +43,7 @@ Donde:
 -   **pendiente o coeficiente**: cuando varia el valor de Y por cada unidad de X
 
 ![](conceptos.PNG)
+
+-   **Hipotesis nula**
+
+![](hipotesis_nula.PNG)
