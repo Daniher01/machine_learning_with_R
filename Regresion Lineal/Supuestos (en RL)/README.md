@@ -10,6 +10,8 @@ En la mayoria de analisis, estos modelos necesitan si o si la **verificacion de 
 -   Ausencia de multicolinealidad
 -   Ausencia de valores influyentes
 
+![](supuestos_verificar.PNG)
+
 ## Linealidad
 
 #### **¿Que es?**
