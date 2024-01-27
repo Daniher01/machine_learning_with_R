@@ -33,7 +33,7 @@
 # 7. Evaluacion
 
 -   Mediente la matriz de confusión
--   Es importante que ambas columnas (la del dataset y la predicha por el modelo) sean el mismo tipo, ejemplo numericas o factores
+-   Es importante que ambas columnas (la del dataset y la predicha por el modelo) sean el mismo tipo, ejemplo numericas o **factores**
 
 ## Conceptos Clave
 
@@ -45,7 +45,7 @@
 
 En base a la matriz de confusión, permite tener una métrica para comparar rendimiento de modelos
 
--   **Exactitud (Acurrancy)**: es la evaluacion general -\> ideal sobre le 80%
+-   **Exactitud (Acurrancy)**: es la evaluacion general -\> **ideal sobre le 80%**
 
     ![](acurrancy.PNG)
 
@@ -56,3 +56,7 @@ En base a la matriz de confusión, permite tener una métrica para comparar rend
 -   **Especificidad o tasa de verdaderos negativos**: solamente hace énfasis en los verdaderos negativos
 
     ![](especificidad.PNG)
+
+Idealmente es un modelo que tenga un acurracy sobre el 80%.
+
+Hay casos donde queremos por ejemplo un modelo que nos diga si hay transacciones bancarias fraudulentas (donde SI es fraudulento y NO es no fraudulento) entonces podemos hacer más énfasis en que el modelo tenga una sensibilidad mayor (porque detecta los positivos) más que en la especificidad

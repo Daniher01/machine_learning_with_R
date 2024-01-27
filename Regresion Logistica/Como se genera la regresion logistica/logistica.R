@@ -1,5 +1,6 @@
 ######## 0. PROCESAMIENTO
 # https://www.kaggle.com/datasets/anupamujawane/career-stats-of-nba-players
+#install.packages("rio")
 library(rio)
 data <- import("Data/nba-players.csv")
 
@@ -19,7 +20,7 @@ summary(log1)
 #log(p/1-p)=-3.24558 + 0.05465 (GP)
 
 ####### 3. VER SIGNIFICANCIA DE VARIABLES INDEPENDIENTES
-# H1: la variable GP es significativa
+# H1: la variable GP es significativa porque p-value es  <2e-16 (menor a 0.5)
 
 ####### 4. VER QUE NOS INDICA EL COEFICIENTE
 exp(log1$coefficients)
@@ -39,17 +40,17 @@ data$predicho<-as.numeric(log1$fitted.values>=0.5)
 ####### 7. CUAN EFECTIVO ES EL MODELO DE CLASIFICACIÓN
 
 ## MATRIZ DE CONFUSION
-#devtools::install_github("topepo/caret")
+#install.packages("caret")
 library(caret)
-valores_predichos <- factor(valores_predichos, levels = c(0, 1))
-data$Target <- factor(data$Target, levels = c(0, 1))
+valores_predichos <- factor(data$predicho)
 caret::confusionMatrix(valores_predichos, data$Target, positive = "1")
 
 table(data$Target)
 # según matriz de confusion
-# Accurracy: 0.68
-# Sensibilidad: 0.68
+# Accurracy: 0.68  -> ideal es que el acurracy fuera ma yor al 80%
+# Sensibilidad: 0.685 -> predice el 68.5% de los positivos
+# Especificidad: 0.686 -> predice el 68.6% de los negativos
 
-### minuto 15
+
 
 
